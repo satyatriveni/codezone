@@ -1,0 +1,41 @@
+mport java.util.*;
+class Biggest
+{
+	public static void main(String args[])
+	{
+	int a=2,b=20,c=30,d=40,max;
+	max=(a>b&&a>c&&a>d)?a:((b>c&&b>d)?b:(c>d?c:d));
+	System.out.println("Biggest of given numbers" + a + ", " + b + " , " + c + " , " + d + "is" + max + " , ");
+    }
+}
+
+______________________________________________________
+
+
+OUTPUT:
+
+
+Last login: Tue Jun 29 19:39:40 on ttys000
+chandra@Chandras-Mac ~ % cd Desktop/
+chandra@Chandras-Mac Desktop % javac Biggest.java
+chandra@Chandras-Mac Desktop % java Biggest
+Biggest of given numbers2, 20 , 30 , 40is40 , 
+chandra@Chandras-Mac Desktop % 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
