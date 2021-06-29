@@ -1,0 +1,48 @@
+mport java.util.Scanner;
+class Alphabets
+{
+	public static void main(String[] args)
+	{
+	Scanner input = new Scanner(System.in);
+	System.out.print("Enter Character : ");
+	char ch = input.next().charAt(0);
+	switch(Character.toLowerCase(ch))
+	{
+	case 'a':
+	case 'e':
+	case 'i':
+	case 'o':
+	case 'u':
+	System.out.print(ch + " is vowel");
+	break;
+	default:
+	System.out.print(ch + " is constant");
+	}
+	}
+}
+--------------------------------------------------
+OUTPUT:
+
+
+Last login: Tue Jun 29 21:02:59 on ttys000
+chandra@Chandras-Mac ~ % cd Desktop/
+chandra@Chandras-Mac Desktop % javac Alphabets.java
+chandra@Chandras-Mac Desktop % java Alphabets
+Enter Character : e
+e is vowel%                                                                     chandra@Chandras-Mac Desktop % java Alphabets
+Enter Character : s
+s is constant%                                                                  chandra@Chandras-Mac Desktop % 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
