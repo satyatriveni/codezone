@@ -1,0 +1,50 @@
+import java.util.Scanner;
+class Leapyear
+{
+     public static void main(String arg[])
+     {
+         long a,y,c;
+         Scanner sc=new Scanner(System.in);
+         System.out.print("enter any calender year:");
+         y=sc.nextLong();
+         if(y!=0)
+         {
+         a=(y%400==0)?(c=1):((y%100==0)?(c=0):((y%4==0)?(c=1):(c=0)));
+         if(a==1)
+              System.out.println(y+" is a leap year");
+              else
+              System.out.println(y+" is not a leap year");
+         }
+         else
+         System.out.println("year zero does not exist"); 
+         }
+}
+
+————————————————————————————————————————————
+
+OUTPUT:
+
+Last login: Tue Jun 29 19:15:20 on ttys000
+chandra@Chandras-Mac ~ % cd Desktop/
+chandra@Chandras-Mac Desktop % javac Leapyear.java
+chandra@Chandras-Mac Desktop % java Leapyear
+enter any calender year:2021
+2021 is not a leap year
+chandra@Chandras-Mac Desktop % java Leapyear
+enter any calender year:2024
+2024 is a leap year
+chandra@Chandras-Mac Desktop % 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
